@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght,HEXP@160..700,0..100&display=swap");
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -34,7 +35,34 @@ nav {
   justify-content: space-between;
 }
 
+nav .nav-button {
+  color: #fe3072;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
 nav .logo-container {
   width: 170px;
   margin: 15px;
+}
+
+nav .logo-container .logo {
+  width: 100%;
+}
+
+/*---- Home Page ----*/
+
+.overlay {
+  width: 100svw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
