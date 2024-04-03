@@ -126,46 +126,44 @@ const OnBoarding = () => {
               checked={formData.show_gender}
             />
 
-            <label>Show Me</label>
-
-            <div className="multiple-input-container">
-              <input
-                id="man-gender-interest"
-                type="radio"
-                name="gender_interest"
-                value="man"
-                onChange={handleChange}
-                checked={formData.gender_interest === "man"}
-              />
-              <label htmlFor="man-gender-interest">Man</label>
-              <input
-                id="woman-gender-interest"
-                type="radio"
-                name="gender_interest"
-                value="woman"
-                onChange={handleChange}
-                checked={formData.gender_interest === "woman"}
-              />
-              <label htmlFor="woman-gender-interest">Woman</label>
-              <input
-                id="everyone-gender-interest"
-                type="radio"
-                name="gender_interest"
-                value="everyone"
-                onChange={handleChange}
-                checked={formData.gender_interest === "everyone"}
-              />
-              <label htmlFor="everyone-gender-interest">Everyone</label>
-            </div>
-
-            <label htmlFor="about">About me</label>
+            <label htmlFor="skills">Skills</label>
             <input
-              id="about"
+              id="skills"
               type="text"
-              name="about"
+              name="skills"
               required={true}
-              placeholder="I like long walks..."
-              value={formData.about}
+              placeholder="Python,HTML/CSS..."
+              value={formData.skills}
+              onChange={handleChange}/>
+
+<label htmlFor="linkedIn">LinkedIn</label>
+            <input
+              id="linkedIn"
+              type="url"
+              name="linkedIn"
+              required={true}
+              placeholder="https://www.linkedin.com/"
+              value={formData.linkedIn}
+              onChange={handleChange}/>
+
+            <label htmlFor="url">Github</label>
+            <input
+              type="url"
+              name="Github"
+              id="Github"
+              required={true}
+              placeholder="https://github.com/"
+              onChange={handleChange}
+            />
+
+<label htmlFor="location">Location</label>
+            <input
+              id="location"
+              type="text"
+              name="location"
+              required={true}
+              placeholder="Adoor Kerala"
+              value={formData.location}
               onChange={handleChange}
             />
 

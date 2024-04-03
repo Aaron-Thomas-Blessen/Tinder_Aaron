@@ -16,7 +16,7 @@ h2 {
 }
 
 .primary-title {
-  font-size: 90px;
+  font-size: 60px;
   color: rgb(255, 255, 255);
 }
 
@@ -51,8 +51,6 @@ h2 {
   border: solid 2px rgb(48, 48, 48);
 }
 
-
-
 /*---- Navbar ----*/
 nav {
   width: 100%;
@@ -81,7 +79,7 @@ nav .logo-container {
 }
 
 nav .logo-container .logo {
-  width: 100%;
+  width: 150%;
 }
 
 /*---- Home Page ----*/
@@ -95,7 +93,7 @@ nav .logo-container .logo {
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("images/6e9794bcedeecf5a8f8f41338a2a7345.webp");
+    url("images/3409297.jpg");
 }
 
 .home {
@@ -134,13 +132,12 @@ nav .logo-container .logo {
   font-size: 17px;
 }
 
-
 /*-------- OnBoarding Page --------*/
 .onboarding {
   border-top: solid 1px rgb(213, 213, 213);
 }
 
-.onboarding form { 
+.onboarding form {
   display: flex;
   justify-content: center;
 }
@@ -188,30 +185,29 @@ nav .logo-container .logo {
   margin-right: 10px;
 }
 
-.onboarding form input[type=radio] {
+.onboarding form input[type="radio"] {
   display: none;
 }
 
-.onboarding form input[type=number] {
+.onboarding form input[type="number"] {
   width: 10%;
 }
 
-.onboarding form input[type=radio]:checked + label {
+.onboarding form input[type="radio"]:checked + label {
   border: solid 2px rgb(221, 39, 22);
 }
 
-.onboarding form input[type=submit]:hover {
+.onboarding form input[type="submit"]:hover {
   background-color: rgb(235, 235, 235);
 }
 
-.onboarding form input[type=submit]:active {
+.onboarding form input[type="submit"]:active {
   background-color: rgb(226, 115, 115);
 }
 
 .onboarding form .photo-container img {
-  width: 100%
+  width: 100%;
 }
-
 
 /*-------- Dashboard  --------*/
 .dashboard {
